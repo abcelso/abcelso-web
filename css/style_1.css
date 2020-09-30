@@ -1,0 +1,206 @@
+body {
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "content content"
+    "main mainDer"
+    "info infoDer"
+    "footer footer";
+  /* gap: 0.5rem; */
+}
+
+/* Cuerpo del Header */
+.header {
+  grid-area: header;
+  position: relative;
+  height: 3rem;
+  background: rgb(44, 44, 48);
+}
+
+.logo {
+  position: absolute;
+  top: 1.5rem;
+  margin-left: 10rem;
+}
+
+.nombre-emp {
+  position: absolute;
+  top: 0.2rem;
+  padding-left: 1rem;
+  color: white;
+  font-family: Woodland;
+  font-size: 2.5rem;
+}
+
+/* Nav Bar */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  grid-area: nav;
+  height: 3rem;
+  font-family: fira-sans, Trebuchet MS, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  background: rgb(44, 44, 48);
+}
+
+.nav-content {
+  margin-right: 5rem;
+  padding: 1rem;
+}
+
+.link a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.link a:hover {
+  border-top: 2px solid cyan;
+  padding: 0.5rem 1rem 1rem 1rem;
+  background: rgba(61, 61, 66, 0.7);
+}
+
+.selection {
+  border-top: 2px solid cyan;
+  padding-top: 0.5rem;
+  background: rgba(61, 61, 66, 0.7);
+}
+
+/* Cuerpo del content */
+.content {
+  display: flex;
+  flex-direction: column;
+  grid-area: content;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  /* background: blue; */
+}
+
+.titulo {
+  position: relative;
+  font-family: Times New Roman, serif, sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: black;
+  padding: 0.5rem;
+}
+
+.subtitulo {
+  position: relative;
+  font-family: Times New Roman, serif, sans-serif;
+  font-size: 1.6rem;
+  color: darkgray;
+}
+
+/* Cuerpo del Main */
+.main {
+  display: flex;
+  flex-direction: row;
+  grid-area: main;
+  justify-content: center;
+  align-items: center;
+  height: 13rem;
+  margin-left: 3rem;
+  /* background: red; */
+}
+
+.mainDer {
+  display: flex;
+  grid-area: mainDer;
+  justify-content: center;
+  align-items: center;
+  height: 13rem;
+  /* background: red; */
+}
+
+.icono {
+  border: 3px solid #1ba38c;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+/* Cuerpo del Info */
+.info {
+  display: flex;
+  grid-area: info;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+  margin-left: 3rem;
+  /* background: green; */
+}
+
+.infoDer {
+  display: flex;
+  grid-area: infoDer;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+  /* background: green; */
+}
+
+/* Cuerpo del Footer */
+.footer {
+  grid-area: footer;
+  height: 7rem;
+  background: rgb(44, 44, 48);
+  position: relative;
+}
+
+.marca {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  color: white;
+}
+
+.social {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+}
+
+.ubicacion {
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  color: white;
+}
+
+.ubicacion div i {
+  padding: 0.2rem;
+  color: #1ba38c;
+  margin-right: 0.5rem;
+}
+
+div i {
+  margin-left: 1rem;
+}
+
+div i:hover {
+  transform: scale(1.5, 1.5);
+  transition: 0.3s;
+}
+
+.parrafo {
+  padding: 3rem;
+}
+.cabecera {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #393939;
+}
+.mensaje {
+  width: 400px;
+  height: 100px;
+  font-size: 1.2em;
+  color: #555;
+}
